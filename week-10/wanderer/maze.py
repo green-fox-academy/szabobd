@@ -20,3 +20,20 @@ def make_maze(w = 16, h = 8):
         print(''.join(a + ['\n'] + b))
 
 make_maze()
+
+img_d = PhotoImage(file="gifs/hero-down.gif")
+image_down = canvas.create_image(72, 72, anchor=NW, image=img_d)
+
+
+def move(event):
+    """Move the sprite image with a d w and s when click them"""
+    if event.char == "a":
+        canvas.move(image_down, -72, 0)
+    elif event.char == "d":
+        canvas.move(image_down, 72, 0)
+    elif event.char == "w":
+        canvas.move(image_down, 0, -72)
+    elif event.char == "s":
+        canvas.move(image_down, 0, 72)
+
+root.bind("<Key>", move)

@@ -10,7 +10,7 @@ class Cell:
                             self.column * image_size + (image_size / 2) + 2, image=resource.get_image(self.cell_type))
 
     def get_cell_type(self):
-        return self.cell_type()
+        print(self.row)
 
-    def set_cell_type(self, cell_type):
-        self.cell_type = cell_type
+
+

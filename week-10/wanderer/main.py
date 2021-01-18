@@ -2,6 +2,7 @@ from tkinter import *
 from resource import Resource
 from grid import Grid
 
+
 class Box(object):
     def __init__(self):
         self.testBoxX = 300

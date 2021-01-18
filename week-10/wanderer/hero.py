@@ -7,8 +7,8 @@ class Hero:
         for i in range(0, size):
             row = []
             for j in range(0, size):
-                self.i = 0
-                self.j = 0
+                self.i = 1
+                self.j = 1
                 cell = Cell(self.i, self.j, "hero_down")
                 row.append(cell)
             self.grid.append(row)

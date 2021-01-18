@@ -20,3 +20,4 @@ class Resource:
 
     def get_image(self, key):
         return self.images[key]
+
